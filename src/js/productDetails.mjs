@@ -4,7 +4,7 @@ import { findProductById } from "./productData.mjs";
 // Make the variable productDetails global so that multiple functions can use it in this file.
 let productInfo = {};    
 
-export default async function productDetails(productId, selector) {
+export default async function productDetails(productId) {
   // use findProductById to get the details for the current product. findProductById will return a promise! use await or .then() to process it
   productInfo = await findProductById(productId);
 
@@ -33,5 +33,4 @@ function renderProductDetails() {
   // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
   // https://www.w3schools.com/tags/att_data-.asp
   document.querySelector("#addToCart").dataset.id = productInfo.Id;
-  
 }
