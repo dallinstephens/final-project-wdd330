@@ -1,4 +1,4 @@
-import { setLocalStorage } from "./utils.mjs";
+import { getLocalStorage, setLocalStorage } from "./utils.mjs";
 import { findProductById } from "./productData.mjs";
 
 // Make the variable productDetails global so that multiple functions can use it in this file.
@@ -17,7 +17,16 @@ export default async function productDetails(productId) {
 }
 
 function addToCart() {
-  setLocalStorage("cart", productInfo);
+  let cartItems = getLocalStorage("cart");
+
+  if (!cartItems) {
+    cartItems = [];
+  }
+
+  // console.log(productInfo);
+
+  cartItems.push(productInfo);
+  setLocalStorage("cart", cartItems);
 }
 
 function renderProductDetails() {

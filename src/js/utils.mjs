@@ -21,6 +21,7 @@ export function setClick(selector, callback) {
   });
   qs(selector).addEventListener("click", callback);
 }
+
 // get a parameter from the URL
 // Reference to team 2 instructor's solution: 
 // https://github.com/matkat99/sleepoutside/blob/v3-team2/src/js/utils.mjs
@@ -31,6 +32,8 @@ export function getParam(param) {
   return parameter;
 }
 
+// This is used to render all the html from a template function that takes in a list, a list of products in this case.
+// The parameter "list" in this case is "products" from productList.mjs.
 export function renderListWithTemplate(templateFunction, parentElement, list, position = "afterbegin", clear = "true") {
   if (clear) {
     parentElement.innerHTML = "";   
@@ -45,7 +48,57 @@ export function renderListWithTemplate(templateFunction, parentElement, list, po
   // let text = fruits.join(" and ");
   // document.getElementById("demo").innerHTML = text;
   // Result: Banana and Orange and Apple and Mango
-  // join("") removes the comma
-  // Reference for insertAdjacentHTML  
+  // join("") removes the comma, so for example:
+  // let text = fruits.join("");
+  // document.getElementById("demo").innerHTML = text;
+  // Result: BananaOrangeAppleMango
+  // Reference for insertAdjacentHTML: https://javascript.info/modifying-document
   parentElement.insertAdjacentHTML(position, htmlStrings.join(""));
+}
+
+// This is used to render the header and footer on each of the html pages.
+// There is no need for a loop.
+export async function renderWithTemplate(templateFunction, parentElement, data, callback, position = "afterbegin", clear = "true") {
+  if (clear) {
+    parentElement.innerHTML = "";   
+  }
+
+  // templateFunction in this case is headerTemplateFunction or footerTemplateFunction
+  const htmlString = await templateFunction(data);
+
+  // Reference for insertAdjacentHTML: https://javascript.info/modifying-document 
+  parentElement.insertAdjacentHTML(position, htmlString);
+
+  if (callback) {
+    callback(data);
+  }
+}
+
+function loadTemplate(path) {
+  // Reference on currying: https://www.geeksforgeeks.org/what-is-currying-function-in-javascript/
+  return async function() {
+    const response = await fetch(path);
+
+    // Reference for response ok property: https://developer.mozilla.org/en-US/docs/Web/API/Response/ok
+    // console.log(response.ok); // returns true if successful
+    if (response.ok) {
+      // Reference for .text(): https://developer.mozilla.org/en-US/docs/Web/API/Response/text
+      const html = await response.text();
+      return html;
+    }
+  }
+}
+
+export function loadHeaderFooter() {
+  // Load the header and footer templates in from our partials.
+  const headerTemplateFunction = loadTemplate("/partials/header.html");
+  const footerTemplateFunction = loadTemplate("/partials/footer.html");
+
+  // Grab the header and footer elements out of the DOM.
+  const headerElement = document.querySelector("#main-header");
+  const footerElement = document.querySelector("#main-footer");
+
+  // Render the header and footer.
+  renderWithTemplate(headerTemplateFunction, headerElement);
+  renderWithTemplate(footerTemplateFunction, footerElement);
 }

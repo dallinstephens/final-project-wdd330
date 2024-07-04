@@ -20,10 +20,13 @@ export default async function productList(selector, category) {
     let element = document.querySelector(selector);
     // get the list of products
     let products = await getData(category);
-    console.log(products);
+    // console.log(products);
     // Reference for array filter(): https://www.w3schools.com/jsref/jsref_filter.asp
     // This filter gets only the 4 tents we need.
     products = products.filter(item => item.Id !== "989CG" && item.Id !== "880RT");
     // render out the product list to the element
+    // console.log(productCardTemplate);
+    // console.log(element);
+    // console.log(products);
     renderListWithTemplate(productCardTemplate, element, products);
 }
