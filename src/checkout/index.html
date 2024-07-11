@@ -8,16 +8,85 @@
 
     <title>Sleep Outside | Checkout</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="../js/checkout.js" type="module"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/checkout.js" type="module"></script>
   </head>
 
   <body>
     <header id="main-header" class="divider"></header>
 
-    <main class="divider">
-      <section class="products">
-        <h2>Review & Place your Order</h2>
+    <main class="divider checkout-container">
+      <h2>Review & Place your Order</h2>
+      <section class="checkout-form">
+        <form name="checkout">
+          <fieldset>
+            <legend>Shipping</legend>
+            <label
+              >First Name <span class="starRequired">*</span
+              ><input type="text" name="fname" id="fname" required
+            /></label>
+            <label
+              >Last Name <span class="starRequired">*</span
+              ><input type="text" name="lname" id="lname" required
+            /></label>
+            <label
+              >Street <span class="starRequired">*</span
+              ><input type="text" name="street" id="street" required
+            /></label>
+            <label
+              >City <span class="starRequired">*</span
+              ><input type="text" name="city" id="city" required
+            /></label>
+            <label
+              >State <span class="starRequired">*</span
+              ><input type="text" name="state" id="state" required
+            /></label>
+            <label
+              >Zip <span class="starRequired">*</span
+              ><input type="text" name="zip" id="zip" required
+            /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Payment</legend>
+            <label
+              >Card Number <span class="starRequired">*</span
+              ><input type="text" name="cardNumber" required
+            /></label>
+            <label
+              >Expiration <span class="starRequired">*</span
+              ><input type="text" name="expiration" required
+            /></label>
+            <label
+              >Security Code <span class="starRequired">*</span
+              ><input type="text" name="securityCode" required
+            /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Order Summary</legend>
+            <ul>
+              <li>
+                <label>Item Subtotal</label>
+                <p id="item-subtotal"></p>
+              </li>
+              <li>
+                <label>Shipping Estimate</label>
+                <p id="shipping-estimate"></p>
+              </li>
+              <li>
+                <label>Tax</label>
+                <p id="tax"></p>
+              </li>
+              <li>
+                <label for="orderTotal">Order Total</label>
+                <p id="order-total"></p>
+              </li>
+            </ul>
+          </fieldset>
+
+          <a id="checkout-submit" type="submit">Checkout</a>
+        </form>
       </section>
     </main>
 

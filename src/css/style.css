@@ -339,3 +339,102 @@ ul.category-container li a h2 {
     margin: 0% 10%;
   }
 }
+
+/* SPECIFIC STYLING FOR CART INDEX.HTML PAGE */
+div.hide {
+  display: none;
+}
+
+div.show {
+  margin-bottom: 25px;
+}
+
+h2.cart-total {
+  margin-bottom: 25px;
+}
+
+.checkout-button {
+  border-radius: 8px;
+  border: 2px solid #000;
+  padding: 15px 25px;
+  margin-bottom: 100px;
+  text-decoration: none;
+  background-color: maroon;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* SPECIFIC STYLING FOR CHECKOUT INDEX.HTML PAGE */
+.checkout-container {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+section.checkout-form label {
+  display: block;
+  padding: 5px 0;
+}
+
+section.checkout-form input {
+  display: block;
+  height: 44px;
+  width: 100%;
+}
+
+section.checkout-form ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reference for how to style specific label with "for": */
+/* https://stackoverflow.com/questions/2599627/how-to-select-label-for-xyz-in-css */
+section.checkout-form label[for="orderTotal"] {
+  font-weight: bold;
+}
+
+section.checkout-form fieldset {
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+section.checkout-form .starRequired {
+  color: rgb(223, 45, 45);
+}
+
+section.checkout-form legend {
+  font-weight: bold;
+}
+
+a#checkout-submit {
+  display: block;
+  width: 150px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  padding: 15px 25px;
+  text-decoration: none;
+  background-color: maroon;
+  color: #fff;
+  font-size: 22px;
+}
+
+section.checkout-form {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .checkout-container {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .checkout-container {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
