@@ -1,4 +1,4 @@
-import { getData } from "./productData.mjs";
+import { getProductsByCategory } from "./externalServices.mjs";
 import { renderListWithTemplate } from "./utils.mjs";
 
 function productCardTemplate(product) {
@@ -20,7 +20,7 @@ export default async function productList(selector, category) {
     // The selector in this case will be ".product-list".
     let element = document.querySelector(selector);
     // get the list of products
-    let products = await getData(category);
+    let products = await getProductsByCategory(category);
     // Reference for insertAdjacentText: https://javascript.info/modifying-document
     // elem.insertAdjacentText(where, text);
     let title = document.querySelector(".products h2");

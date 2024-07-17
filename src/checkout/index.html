@@ -23,27 +23,47 @@
             <legend>Shipping</legend>
             <label
               >First Name <span class="starRequired">*</span
-              ><input type="text" name="fname" id="fname" required
+              ><input
+                type="text"
+                name="fname"
+                id="fname"
+                required
+                value="Dallin"
             /></label>
             <label
               >Last Name <span class="starRequired">*</span
-              ><input type="text" name="lname" id="lname" required
+              ><input
+                type="text"
+                name="lname"
+                id="lname"
+                required
+                value="Stephens"
             /></label>
             <label
               >Street <span class="starRequired">*</span
-              ><input type="text" name="street" id="street" required
+              ><input
+                type="text"
+                name="street"
+                id="street"
+                required
+                value="777 Peach Ln"
             /></label>
             <label
               >City <span class="starRequired">*</span
-              ><input type="text" name="city" id="city" required
+              ><input
+                type="text"
+                name="city"
+                id="city"
+                required
+                value="Bountiful"
             /></label>
             <label
               >State <span class="starRequired">*</span
-              ><input type="text" name="state" id="state" required
+              ><input type="text" name="state" id="state" required value="UT"
             /></label>
             <label
               >Zip <span class="starRequired">*</span
-              ><input type="text" name="zip" id="zip" required
+              ><input type="text" name="zip" id="zip" required value="84010"
             /></label>
           </fieldset>
 
@@ -51,38 +71,44 @@
             <legend>Payment</legend>
             <label
               >Card Number <span class="starRequired">*</span
-              ><input type="text" name="cardNumber" required
+              ><input
+                type="text"
+                name="cardNumber"
+                required
+                value="1234123412341234"
             /></label>
             <label
               >Expiration <span class="starRequired">*</span
-              ><input type="text" name="expiration" required
+              ><input type="text" name="expiration" required value="7/26"
             /></label>
             <label
               >Security Code <span class="starRequired">*</span
-              ><input type="text" name="securityCode" required
+              ><input type="text" name="code" required value="123"
             /></label>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="checkout-summary">
             <legend>Order Summary</legend>
-            <ul>
-              <li>
-                <label>Item Subtotal</label>
-                <p id="item-subtotal"></p>
-              </li>
-              <li>
-                <label>Shipping Estimate</label>
-                <p id="shipping-estimate"></p>
-              </li>
-              <li>
-                <label>Tax</label>
-                <p id="tax"></p>
-              </li>
-              <li>
-                <label for="orderTotal">Order Total</label>
-                <p id="order-total"></p>
-              </li>
-            </ul>
+            <!-- Reference for not using label unless you have tags such as input or select: -->
+            <!-- https://stackoverflow.com/questions/76229498/incorrect-use-of-label-for-form-element-how-to-fix-->
+            <!-- Reference for what could be used instead of label: -->
+            <!-- https://stackoverflow.com/questions/15312758/html-fieldset-with-no-fields -->
+            <div>
+              <h4>Item Subtotal (<span id="number-of-items"></span>)</h4>
+              <p id="item-subtotal"></p>
+            </div>
+            <div>
+              <h4>Shipping Estimate</h4>
+              <p id="shipping"></p>
+            </div>
+            <div>
+              <h4>Tax</h4>
+              <p id="tax"></p>
+            </div>
+            <div>
+              <h4>Order Total</h4>
+              <p id="order-total"></p>
+            </div>
           </fieldset>
 
           <a id="checkout-submit" type="submit">Checkout</a>

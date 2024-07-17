@@ -382,18 +382,6 @@ section.checkout-form input {
   width: 100%;
 }
 
-section.checkout-form ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Reference for how to style specific label with "for": */
-/* https://stackoverflow.com/questions/2599627/how-to-select-label-for-xyz-in-css */
-section.checkout-form label[for="orderTotal"] {
-  font-weight: bold;
-}
-
 section.checkout-form fieldset {
   margin-bottom: 20px;
   background-color: #f2f2f2;
@@ -405,6 +393,14 @@ section.checkout-form .starRequired {
 
 section.checkout-form legend {
   font-weight: bold;
+}
+
+fieldset.checkout-summary h4 {
+  margin-bottom: 0;
+}
+
+fieldset.checkout-summary p {
+  margin-top: 10px;
 }
 
 a#checkout-submit {

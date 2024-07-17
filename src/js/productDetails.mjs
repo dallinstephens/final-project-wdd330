@@ -1,5 +1,5 @@
 import { getLocalStorage, setLocalStorage } from "./utils.mjs";
-import { findProductById } from "./productData.mjs";
+import { findProductById } from "./externalServices.mjs";
 
 // Make the variable productDetails global so that multiple functions can use it in this file.
 let productInfo = {};    
