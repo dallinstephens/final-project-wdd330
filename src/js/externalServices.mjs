@@ -2,11 +2,16 @@
 // This uses the environment variable set up in the .env file.
 const baseURL = import.meta.env.VITE_SERVER_URL;
 
-function convertToJson(res) {
-  if (res.ok) {
-    return res.json();
+async function convertToJson(response) {
+  // This converts our response body to JSON before checking to see if it is okay.
+  // The variable jsonResponse is the body of the response from the server that we converted to JSON.
+  const jsonResponse = await response.json();
+
+  if (response.ok) {
+    return jsonResponse;
   } else {
-    throw new Error("Bad Response");
+      throw { name: "servicesError", message: jsonResponse };
+    // throw new Error("Bad Response");
   }
 }
 

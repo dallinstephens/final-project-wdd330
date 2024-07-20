@@ -9,6 +9,12 @@ checkoutProcess.initiate("cart", ".checkout-summary");
 document.querySelector("#checkout-submit").addEventListener("click", (e) => {
   e.preventDefault();
 
+  var myForm = document.forms[0];
+  var checkStatus = myForm.checkValidity();
+  myForm.reportValidity();
+
   // This passed the form into the checkout function in the variable checkoutProcess:
-  checkoutProcess.checkout(document.forms["checkout"]);
+  if (checkStatus) {
+    checkoutProcess.checkout(document.forms["checkout"]);
+  }
 });

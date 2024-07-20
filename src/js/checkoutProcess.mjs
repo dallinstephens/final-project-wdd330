@@ -1,4 +1,4 @@
-import { getLocalStorage } from "./utils.mjs";
+import { getLocalStorage, setLocalStorage, showAlertMessage, removePreviousAlerts } from "./utils.mjs";
 import { checkoutInExternalServices } from "./externalServices.mjs"
 
 const checkoutProcess = {
@@ -75,11 +75,26 @@ const checkoutProcess = {
         json.items = packageItems(this.list);
         // console.log(json);
         try {
-            // This passes the json as they payload to the checkoutInExternalServices function in externalServices.mjs.
+            // This passes the json as the payload to the checkoutInExternalServices function in externalServices.mjs.
             const response = await checkoutInExternalServices(json);
             console.log(response); // Example output: {orderId: 1923, message: 'Order Placed'}
+            // Empty the cart in local storage so that after the order is placed, the cart is empty.
+            setLocalStorage("cart", []);
+            // Reference for location.assign: https://www.w3schools.com/jsref/met_loc_assign.asp
+            // location.assign will load a new window
+            location.assign("/checkout/success.html"); 
+            
         }
         catch (error) {
+            // Remove previous alerts.
+            removePreviousAlerts();
+
+            // Reference for try catch error message: https://www.w3schools.com/js/js_errors.asp
+            // The loop is in case there is more than one error message.
+            for (let message in error.message) {
+                // alert(error.message[message]);
+                showAlertMessage(error.message[message]);
+            }
             console.log(error);
         }
     },

@@ -1,4 +1,4 @@
-import { getLocalStorage, setLocalStorage } from "./utils.mjs";
+import { getLocalStorage, setLocalStorage, showAlertMessage } from "./utils.mjs";
 import { findProductById } from "./externalServices.mjs";
 
 // Make the variable productDetails global so that multiple functions can use it in this file.
@@ -24,10 +24,13 @@ function addToCart() {
     cartItems = [];
   }
 
-  // console.log(productInfo);
+  console.log(productInfo);
 
   cartItems.push(productInfo);
   setLocalStorage("cart", cartItems);
+
+  // Show message to the user that the product has been added to the cart.
+  showAlertMessage(`Thank you! ${productInfo.Name} has been added to your cart!`);
 }
 
 function renderProductDetails() {

@@ -60,7 +60,8 @@ function calculateCartTotal(cartItems) {
   const arrayWithFinalPrices = cartItems.map((cartItem) => cartItem.FinalPrice);
   // console.log(arrayWithFinalPrices);
   // Reference on how to use array reduce(): https://www.w3schools.com/jsref/jsref_reduce.asp
-  const total = arrayWithFinalPrices.reduce((sum, itemFinalPrice) => sum + itemFinalPrice);
+  // Note: A initial value of 0 is added to prevent an error in the console.
+  const total = arrayWithFinalPrices.reduce((sum, itemFinalPrice) => sum + itemFinalPrice, 0);
   // console.log(total);
   return total;
 }

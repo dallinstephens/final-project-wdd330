@@ -102,3 +102,42 @@ export function loadHeaderFooter() {
   renderWithTemplate(headerTemplateFunction, headerElement);
   renderWithTemplate(footerTemplateFunction, footerElement);
 }
+
+// Reference for help on showAlertMessage function: https://github.com/matkat99/sleepoutside/blob/v3-team7/src/js/utils.mjs
+export function showAlertMessage(message, scroll = true) {
+  const mainElement = document.querySelector("main");
+
+  const alertElement = document.createElement("div");
+
+  alertElement.classList.add("alert-message");
+
+  alertElement.innerHTML = `${message} <span class="delete-message">X</span>`;
+
+  // Reference for prepend() DOM element: https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend
+  mainElement.prepend(alertElement);
+
+  alertElement.addEventListener("click", function(event) {
+   // Reference for event target in JavaScript: https://www.w3schools.com/jsref/event_target.asp
+    // event.target.tagName could also be used
+    // Reference for className: https://stackoverflow.com/questions/11026056/getting-the-class-of-the-element-that-fired-an-event-using-jquery
+    if (event.target.className == "delete-message") {
+      // Reference for removeChild() DOM element: https://www.w3schools.com/jsref/met_node_removechild.asp
+      mainElement.removeChild(this);
+    }
+  });
+
+  // Reference for window scrollTo(): https://www.w3schools.com/jsref/met_win_scrollto.asp
+  if (scroll) {
+    window.scrollTo(0, 0);
+  }
+}
+
+// Remove previous alerts.
+export function removePreviousAlerts() {
+  const alertElements = document.querySelectorAll(".alert-message");
+
+  const mainElement = document.querySelector("main");
+
+  // Reference for forEach(): https://www.w3schools.com/jsref/jsref_foreach.asp
+  alertElements.forEach( alertElement => mainElement.removeChild(alertElement) ); 
+}
