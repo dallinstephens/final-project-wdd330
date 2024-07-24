@@ -50,3 +50,29 @@ export async function checkoutInExternalServices(payload) {
   };
   return await fetch(baseURL + "checkout/", options).then(convertToJson);
 }
+
+// The credentials are {email, password}.
+export async function loginRequest(credentials) {
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(credentials)
+  };
+  const response = await fetch(baseURL + "login", options).then(convertToJson);
+  // Does accessToken come from the module called jwt-decode?
+  return response.accessToken;
+}
+
+export async function getOrders(token) {
+  const options = {
+    method: "GET",
+    headers: {
+      "Authorization": `Bearer ${token}`,
+    },
+  };
+  const response = await fetch(baseURL + "orders", options).then(convertToJson);
+  console.log(response);
+  return response;
+}

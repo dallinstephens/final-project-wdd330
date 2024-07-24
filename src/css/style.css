@@ -364,34 +364,40 @@ h2.cart-total {
   font-size: 22px;
 }
 
-/* SPECIFIC STYLING FOR CHECKOUT INDEX.HTML PAGE */
-.checkout-container {
+/* SPECIFIC STYLING FOR CHECKOUT AND LOGIN INDEX.HTML PAGE */
+.checkout-container,
+.login-container {
   width: 95%;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
 
-section.checkout-form label {
+section.checkout-form label,
+.login-container label {
   display: block;
   padding: 5px 0;
 }
 
-section.checkout-form input {
+section.checkout-form input,
+.login-container input {
   display: block;
   height: 44px;
   width: 100%;
 }
 
-section.checkout-form fieldset {
+section.checkout-form fieldset,
+.login-container fieldset {
   margin-bottom: 20px;
   background-color: #f2f2f2;
 }
 
-section.checkout-form .starRequired {
+section.checkout-form .starRequired,
+.login-container .starRequired {
   color: rgb(223, 45, 45);
 }
 
-section.checkout-form legend {
+section.checkout-form legend,
+.login-container legend {
   font-weight: bold;
 }
 
@@ -403,7 +409,8 @@ fieldset.checkout-summary p {
   margin-top: 10px;
 }
 
-a#checkout-submit {
+a#checkout-submit,
+.login-container a#login-submit {
   display: block;
   width: 150px;
   border-radius: 8px;
@@ -415,7 +422,8 @@ a#checkout-submit {
   font-size: 22px;
 }
 
-section.checkout-form {
+section.checkout-form,
+a#login-submit {
   margin-bottom: 20px;
 }
 
@@ -462,4 +470,48 @@ section.checkout-form {
   float: right;
   font-weight: bold;
   font-size: 25px;
+}
+
+/* STYLING FOR LOGIN BUTTON IN HEADER */
+a#login-button {
+  position: absolute;
+  right: 2em;
+  top: 5px;
+  display: block;
+  border-radius: 8px;
+  border: 2px solid #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: maroon;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* STYLING FOR ORDERS INDEX.HTML PAGE */
+/* Reference for styling table: https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy */
+main.orders h2 {
+  width: 95%;
+  margin: 10px 2.5%;
+}
+
+table#orders {
+  width: 95%;
+  margin: 0 2.5%;
+  border-collapse: collapse;
+}
+
+table#orders th,
+td {
+  border: 1px solid #000;
+  padding: 12px 5px;
+  text-align: left;
+}
+
+table#orders th {
+  background-color: rgb(223, 45, 45);
+  color: #fff;
+}
+
+table#orders tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
