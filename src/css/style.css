@@ -116,7 +116,7 @@ header {
   margin-top: -1.3em;
 }
 
-.logo--square>div {
+.logo--square > div {
   margin-top: -1.7em;
 }
 
@@ -348,7 +348,7 @@ ul.category-container li {
 /* https://www.w3schools.com/cssref/tryit.php?filename=trycss3_filter_all */
 ul.category-container li:hover {
   outline: 5px solid maroon;
-  filter: brightness(1.50);
+  filter: brightness(1.5);
 }
 
 ul.category-container li a {
@@ -369,7 +369,6 @@ ul.category-container li a h2 {
 }
 
 @media screen and (min-width: 300px) {
-
   /* Reference for CSS flex-direction Property: */
   /* https://www.w3schools.com/cssref/css3_pr_flex-direction.php */
   ul.category-container {
@@ -404,7 +403,6 @@ ul.category-container li a h2 {
 }
 
 @media screen and (min-width: 500px) {
-
   /* Reference for CSS flex-direction Property: */
   /* https://www.w3schools.com/cssref/css3_pr_flex-direction.php */
   ul.category-container {

@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mens Attire | Orders</title>
 
-  <title>Mens Attire | Orders</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/orders.js" type="module"></script>
+  </head>
 
-  <link rel="stylesheet" href="/css/style.css" />
-  <script src="/js/orders.js" type="module"></script>
-</head>
+  <body>
+    <header id="main-header" class="divider"></header>
 
-<body>
-  <header id="main-header" class="divider"></header>
+    <main class="divider orders">
+      <h2>Orders</h2>
+      <table id="orders">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>#Items</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody class="order-body"></tbody>
+      </table>
+    </main>
 
-  <main class="divider orders">
-    <h2>Orders</h2>
-    <table id="orders">
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Date</th>
-          <th>#Items</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody class="order-body"></tbody>
-    </table>
-  </main>
-
-  <footer id="main-footer"></footer>
-</body>
-
+    <footer id="main-footer"></footer>
+  </body>
 </html>

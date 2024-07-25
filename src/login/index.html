@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mens Attire | Login</title>
 
-  <title>Mens Attire | Login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/login.js" type="module"></script>
+  </head>
 
-  <link rel="stylesheet" href="/css/style.css" />
-  <script src="/js/login.js" type="module"></script>
-</head>
+  <body>
+    <header id="main-header" class="divider"></header>
 
-<body>
-  <header id="main-header" class="divider"></header>
+    <main class="divider login-container">
+      <h2>Login</h2>
+      <section class="login-form">
+        <form name="loginForm">
+          <fieldset>
+            <legend>Login Info</legend>
+            <!-- Reference for input type email: https://www.w3schools.com/tags/att_input_type_email.asp -->
+            <label
+              >Username (email) <span class="starRequired">*</span
+              ><input
+                type="email"
+                name="email"
+                id="email"
+                required
+                value="user1@email.com"
+            /></label>
+            <!-- Reference for input type password: https://www.w3schools.com/tags/att_input_type_password.asp -->
+            <label
+              >Password <span class="starRequired">*</span
+              ><input
+                type="password"
+                name="password"
+                id="password"
+                required
+                value="user1"
+            /></label>
+          </fieldset>
 
-  <main class="divider login-container">
-    <h2>Login</h2>
-    <section class="login-form">
-      <form name="loginForm">
-        <fieldset>
-          <legend>Login Info</legend>
-          <!-- Reference for input type email: https://www.w3schools.com/tags/att_input_type_email.asp -->
-          <label>Username (email) <span class="starRequired">*</span><input type="email" name="email" id="email"
-              required value="user1@email.com" /></label>
-          <!-- Reference for input type password: https://www.w3schools.com/tags/att_input_type_password.asp -->
-          <label>Password <span class="starRequired">*</span><input type="password" name="password" id="password"
-              required value="user1" /></label>
-        </fieldset>
+          <a id="login-submit" type="submit">Login</a>
+        </form>
+      </section>
+    </main>
 
-        <a id="login-submit" type="submit">Login</a>
-      </form>
-    </section>
-  </main>
-
-  <footer id="main-footer"></footer>
-</body>
-
+    <footer id="main-footer"></footer>
+  </body>
 </html>
