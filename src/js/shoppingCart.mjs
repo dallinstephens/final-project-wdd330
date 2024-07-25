@@ -111,6 +111,8 @@ function deleteItemUponClick() {
       // https://www.w3schools.com/howto/howto_js_remove_class.asp
       numberOfCartItemsElement.classList.remove("hide");
 
+      // Reference for getting DOM nth-of-type:
+      // https://stackoverflow.com/questions/41848550/how-to-select-nth-element-of-the-same-type
       let clickedLiElement = document.querySelector(`li:nth-of-type(${index + 1})`);
 
       // Reference for removeChild() DOM element: https://www.w3schools.com/jsref/met_node_removechild.asp
