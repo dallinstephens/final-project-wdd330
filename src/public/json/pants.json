@@ -1,0 +1,135 @@
+[
+  {
+    "Id": "Z96N5S_HfgE",
+    "NameWithoutBrand": "Black pants",
+    "Name": "Levi Black pants",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1584864783592-f1d6d4fcd1d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1584864783592-f1d6d4fcd1d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1584864783592-f1d6d4fcd1d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1584864783592-f1d6d4fcd1d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Black"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@santoshvaithiyanathan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Santhosh Vaithiyanathan</a> on <a href='https://unsplash.com/photos/man-in-white-t-shirt-and-black-pants-standing-on-white-floor-Z96N5S_HfgE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 300.0,
+    "Brand": {
+      "Id": "1308",
+      "LogoSrc": "../images/logos/marmot-160x100.jpg",
+      "Name": "Levi"
+    },
+    "ListPrice": 49.99,
+    "FinalPrice": 29.99
+  },
+  {
+    "Id": "HgyAIYvMWkw",
+    "NameWithoutBrand": "Blue Dress Pants",
+    "Name": "Levi Blue Dress Pants",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Blue"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@mohamadkhosravi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Mohamad Khosravi</a> on <a href='https://unsplash.com/photos/man-in-blue-suit-standing-HgyAIYvMWkw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 299.0,
+    "Brand": {
+      "Id": "1440",
+      "Name": "Levi"
+    },
+    "ListPrice": 36.99,
+    "FinalPrice": 28.99
+  },
+  {
+    "Id": "d54wbtjedog",
+    "NameWithoutBrand": "Blue Denim Pants",
+    "Name": "Levi Denim Pants",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1617114919297-3c8ddb01f599?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1617114919297-3c8ddb01f599?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1617114919297-3c8ddb01f599?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1617114919297-3c8ddb01f599?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Blue"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@mohamadkhosravi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Mohamad Khosravi</a> on <a href='https://unsplash.com/photos/man-in-brown-jacket-and-blue-denim-jeans-sitting-on-brown-concrete-bench-during-daytime-d54wbtjedog?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 270.0,
+    "Brand": {
+      "Id": "1440",
+      "Name": "Levi"
+    },
+    "ListPrice": 32.99,
+    "FinalPrice": 27.99
+  },
+  {
+    "Id": "0qv78X-Yy_o",
+    "NameWithoutBrand": "Black Fitness Pants",
+    "Name": "Adidas Black Fitness Pants",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1541102396743-74c128e1133e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1541102396743-74c128e1133e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1541102396743-74c128e1133e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1541102396743-74c128e1133e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Black"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@fodelwdc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Fares Hamouche</a> on <a href='https://unsplash.com/photos/man-wearing-black-and-red-jacket-and-black-pants-outfit-0qv78X-Yy_o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 489.0,
+    "Brand": {
+      "Id": "1308",
+      "Name": "Adidas"
+    },
+    "ListPrice": 45.99,
+    "FinalPrice": 31.99
+  }
+]

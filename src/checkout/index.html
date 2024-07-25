@@ -1,121 +1,81 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
 
-    <title>Sleep Outside | Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/checkout.js" type="module"></script>
-  </head>
+  <title>Mens Attire | Checkout</title>
 
-  <body>
-    <header id="main-header" class="divider"></header>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/checkout.js" type="module"></script>
+</head>
 
-    <main class="divider checkout-container">
-      <h2>Review & Place your Order</h2>
-      <section class="checkout-form">
-        <form name="checkout">
-          <fieldset>
-            <legend>Shipping</legend>
-            <label
-              >First Name <span class="starRequired">*</span
-              ><input
-                type="text"
-                name="fname"
-                id="fname"
-                required
-                value="Dallin"
-            /></label>
-            <label
-              >Last Name <span class="starRequired">*</span
-              ><input
-                type="text"
-                name="lname"
-                id="lname"
-                required
-                value="Stephens"
-            /></label>
-            <label
-              >Street <span class="starRequired">*</span
-              ><input
-                type="text"
-                name="street"
-                id="street"
-                required
-                value="777 Peach Ln"
-            /></label>
-            <label
-              >City <span class="starRequired">*</span
-              ><input
-                type="text"
-                name="city"
-                id="city"
-                required
-                value="Bountiful"
-            /></label>
-            <label
-              >State <span class="starRequired">*</span
-              ><input type="text" name="state" id="state" required value="UT"
-            /></label>
-            <label
-              >Zip <span class="starRequired">*</span
-              ><input type="text" name="zip" id="zip" required value="84010"
-            /></label>
-          </fieldset>
+<body>
+  <header id="main-header" class="divider"></header>
 
-          <fieldset>
-            <legend>Payment</legend>
-            <label
-              >Card Number <span class="starRequired">*</span
-              ><input
-                type="text"
-                name="cardNumber"
-                required
-                value="1234123412341234"
-            /></label>
-            <label
-              >Expiration <span class="starRequired">*</span
-              ><input type="text" name="expiration" required value="7/26"
-            /></label>
-            <label
-              >Security Code <span class="starRequired">*</span
-              ><input type="text" name="code" required value="123"
-            /></label>
-          </fieldset>
+  <main class="divider checkout-container">
+    <h2>Review & Place your Order</h2>
+    <section class="checkout-form">
+      <form name="checkout">
+        <fieldset>
+          <legend>Shipping</legend>
+          <label>First Name <span class="starRequired">*</span><input type="text" name="fname" id="fname" required
+              value="Dallin" /></label>
+          <label>Last Name <span class="starRequired">*</span><input type="text" name="lname" id="lname" required
+              value="Stephens" /></label>
+          <label>Street <span class="starRequired">*</span><input type="text" name="street" id="street" required
+              value="777 Peach Ln" /></label>
+          <label>City <span class="starRequired">*</span><input type="text" name="city" id="city" required
+              value="Bountiful" /></label>
+          <label>State <span class="starRequired">*</span><input type="text" name="state" id="state" required
+              value="UT" /></label>
+          <label>Zip <span class="starRequired">*</span><input type="text" name="zip" id="zip" required
+              value="84010" /></label>
+        </fieldset>
 
-          <fieldset class="checkout-summary">
-            <legend>Order Summary</legend>
-            <!-- Reference for not using label unless you have tags such as input or select: -->
-            <!-- https://stackoverflow.com/questions/76229498/incorrect-use-of-label-for-form-element-how-to-fix-->
-            <!-- Reference for what could be used instead of label: -->
-            <!-- https://stackoverflow.com/questions/15312758/html-fieldset-with-no-fields -->
-            <div>
-              <h4>Item Subtotal (<span id="number-of-items"></span>)</h4>
-              <p id="item-subtotal"></p>
-            </div>
-            <div>
-              <h4>Shipping Estimate</h4>
-              <p id="shipping"></p>
-            </div>
-            <div>
-              <h4>Tax</h4>
-              <p id="tax"></p>
-            </div>
-            <div>
-              <h4>Order Total</h4>
-              <p id="order-total"></p>
-            </div>
-          </fieldset>
+        <fieldset>
+          <legend>Payment</legend>
+          <label>Card Number <span class="starRequired">*</span><input type="text" name="cardNumber" required
+              value="1234123412341234" /></label>
+          <label>Expiration <span class="starRequired">*</span><input type="text" name="expiration" required
+              value="7/26" /></label>
+          <label>Security Code <span class="starRequired">*</span><input type="text" name="code" required
+              value="123" /></label>
+        </fieldset>
 
-          <a id="checkout-submit" type="submit">Checkout</a>
-        </form>
-      </section>
-    </main>
+        <fieldset class="checkout-summary">
+          <legend>Order Summary</legend>
+          <!-- Reference for not using label unless you have tags such as input or select: -->
+          <!-- https://stackoverflow.com/questions/76229498/incorrect-use-of-label-for-form-element-how-to-fix-->
+          <!-- Reference for what could be used instead of label: -->
+          <!-- https://stackoverflow.com/questions/15312758/html-fieldset-with-no-fields -->
+          <div>
+            <h4>Item Subtotal (<span id="number-of-items"></span>)</h4>
+            <p id="item-subtotal"></p>
+          </div>
+          <div>
+            <h4>Shipping Estimate</h4>
+            <p id="shipping"></p>
+          </div>
+          <div>
+            <h4>Tax</h4>
+            <p id="tax"></p>
+          </div>
+          <div>
+            <h4>Order Total</h4>
+            <p id="order-total"></p>
+          </div>
+        </fieldset>
 
-    <footer id="main-footer"></footer>
-  </body>
+        <a id="checkout-submit" type="submit">Checkout</a>
+      </form>
+    </section>
+  </main>
+
+  <footer id="main-footer"></footer>
+</body>
+
 </html>

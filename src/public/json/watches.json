@@ -1,0 +1,135 @@
+[
+  {
+    "Id": "PijWfMyKpx8",
+    "NameWithoutBrand": "Silver Watch With Black Time Stamps",
+    "Name": "Cartier Silver Watch With Black Time Stamps",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1660959324988-81af2af528f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnMlMjB3YXRjaGVzfGVufDB8fDB8fHwy",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1660959324988-81af2af528f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnMlMjB3YXRjaGVzfGVufDB8fDB8fHwy",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1660959324988-81af2af528f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnMlMjB3YXRjaGVzfGVufDB8fDB8fHwy",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1660959324988-81af2af528f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lbnMlMjB3YXRjaGVzfGVufDB8fDB8fHwy"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Silver"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@zacgudakov?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Zac Gudakov</a> on <a href='https://unsplash.com/photos/a-person-wearing-a-watch-PijWfMyKpx8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 300.0,
+    "Brand": {
+      "Id": "1308",
+      "LogoSrc": "../images/logos/marmot-160x100.jpg",
+      "Name": "Cartier"
+    },
+    "ListPrice": 89.99,
+    "FinalPrice": 79.99
+  },
+  {
+    "Id": "NCwc-9zRRUs",
+    "NameWithoutBrand": "Black Silver Watch",
+    "Name": "Timex Black Silver Watch",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1662230178048-8d1a2649b3dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMHdhdGNoZXN8ZW58MHx8MHx8fDI%3D",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1662230178048-8d1a2649b3dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMHdhdGNoZXN8ZW58MHx8MHx8fDI%3D",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1662230178048-8d1a2649b3dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMHdhdGNoZXN8ZW58MHx8MHx8fDI%3D",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1662230178048-8d1a2649b3dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVucyUyMHdhdGNoZXN8ZW58MHx8MHx8fDI%3D"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Black and Silver"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@passionpursuit_pro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Sohaim Siddiquee</a> on <a href='https://unsplash.com/photos/a-watch-on-a-table-NCwc-9zRRUs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 299.0,
+    "Brand": {
+      "Id": "1440",
+      "Name": "Timex"
+    },
+    "ListPrice": 49.99,
+    "FinalPrice": 27.99
+  },
+  {
+    "Id": "9D0Tzqq7J2k",
+    "NameWithoutBrand": "Silver Watch With Black Interface",
+    "Name": "Panerai Silver Watch With Black Interface",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1703505841379-2f863b201212?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMHdhdGNoZXN8ZW58MHx8MHx8fDI%3D",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1703505841379-2f863b201212?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMHdhdGNoZXN8ZW58MHx8MHx8fDI%3D",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1703505841379-2f863b201212?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMHdhdGNoZXN8ZW58MHx8MHx8fDI%3D",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1703505841379-2f863b201212?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVucyUyMHdhdGNoZXN8ZW58MHx8MHx8fDI%3D"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Silver and Black"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@jay_5?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Jayanth Muppaneni</a> on <a href='https://unsplash.com/photos/a-watch-sitting-on-top-of-a-metal-bracelet-9D0Tzqq7J2k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 270.0,
+    "Brand": {
+      "Id": "1440",
+      "Name": "Panerai"
+    },
+    "ListPrice": 99.99,
+    "FinalPrice": 89.99
+  },
+  {
+    "Id": "lMiA3i5VquM",
+    "NameWithoutBrand": "Golden Brown Wood Watch",
+    "Name": "Treehut Golden Brown Wood Watch",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1602024274829-5c09dce4dc59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG1lbnMlMjB3YXRjaGVzfGVufDB8fDB8fHwy",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1602024274829-5c09dce4dc59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG1lbnMlMjB3YXRjaGVzfGVufDB8fDB8fHwy",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1602024274829-5c09dce4dc59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG1lbnMlMjB3YXRjaGVzfGVufDB8fDB8fHwy",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1602024274829-5c09dce4dc59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG1lbnMlMjB3YXRjaGVzfGVufDB8fDB8fHwy"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Golden Brown"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@joycoast?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Joycoast Wood Watches & Sunglasses</a> on <a href='https://unsplash.com/photos/person-wearing-gold-and-silver-round-analog-watch-lMiA3i5VquM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 489.0,
+    "Brand": {
+      "Id": "1308",
+      "Name": "Treehut"
+    },
+    "ListPrice": 79.99,
+    "FinalPrice": 69.99
+  }
+]

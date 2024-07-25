@@ -1,0 +1,135 @@
+[
+  {
+    "Id": "N0ke5zChVBU",
+    "NameWithoutBrand": "Navy Blue Polo Shirt",
+    "Name": "Nimble Made Navy Blue Polo Shirt",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1602810320073-1230c46d89d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVucyUyMHNoaXJ0c3xlbnwwfHwwfHx8Mg%3D%3D",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1602810320073-1230c46d89d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVucyUyMHNoaXJ0c3xlbnwwfHwwfHx8Mg%3D%3D",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1602810320073-1230c46d89d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVucyUyMHNoaXJ0c3xlbnwwfHwwfHx8Mg%3D%3D",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1602810320073-1230c46d89d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVucyUyMHNoaXJ0c3xlbnwwfHwwfHx8Mg%3D%3D"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Navy Blue"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@nimblemade?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Nimble Made</a> on <a href='https://unsplash.com/photos/black-and-orange-nike-polo-shirt-N0ke5zChVBU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 300.0,
+    "Brand": {
+      "Id": "1308",
+      "LogoSrc": "../images/logos/marmot-160x100.jpg",
+      "Name": "Nimble Made"
+    },
+    "ListPrice": 29.99,
+    "FinalPrice": 19.99
+  },
+  {
+    "Id": "kMGX6UK06Ps",
+    "NameWithoutBrand": "Purple Button Up Shirt",
+    "Name": "Nimble Made Purple Button Up Shirt",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1602810318660-d2c46b750f88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1602810318660-d2c46b750f88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1602810318660-d2c46b750f88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1602810318660-d2c46b750f88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Purple"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@nimblemade?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Nimble Made</a> on <a href='https://unsplash.com/photos/purple-button-up-shirt-on-brown-wooden-table-kMGX6UK06Ps?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 299.0,
+    "Brand": {
+      "Id": "1440",
+      "Name": "Nimble Made"
+    },
+    "ListPrice": 32.99,
+    "FinalPrice": 21.99
+  },
+  {
+    "Id": "q7D864lJP9s",
+    "NameWithoutBrand": "Blue Polo Shirt",
+    "Name": "Tommy-Hilfiger Blue Polo Shirt",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1521330784804-5f69f8a17b1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVucyUyMHNoaXJ0c3xlbnwwfHwwfHx8Mg%3D%3D",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1521330784804-5f69f8a17b1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVucyUyMHNoaXJ0c3xlbnwwfHwwfHx8Mg%3D%3D",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1521330784804-5f69f8a17b1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVucyUyMHNoaXJ0c3xlbnwwfHwwfHx8Mg%3D%3D",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1521330784804-5f69f8a17b1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVucyUyMHNoaXJ0c3xlbnwwfHwwfHx8Mg%3D%3D"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Blue"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@jeroendenotter?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Jeroen den Otter</a> on <a href='https://unsplash.com/photos/pair-of-brown-loafers-and-blue-polo-shirt-q7D864lJP9s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 270.0,
+    "Brand": {
+      "Id": "1440",
+      "Name": "Tommy-Hilfiger"
+    },
+    "ListPrice": 22.99,
+    "FinalPrice": 15.99
+  },
+  {
+    "Id": "FYCRjmSlKqg",
+    "NameWithoutBrand": "White Long Sleeve Button Up Shirt",
+    "Name": "Nimble Made White Long Sleeve Button Up Shirt",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1602810317536-5d5e8a552d15?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1602810317536-5d5e8a552d15?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1602810317536-5d5e8a552d15?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1602810317536-5d5e8a552d15?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "White"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@nimblemade?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Nimble Made</a> on <a href='https://unsplash.com/photos/white-printer-paper-on-brown-wooden-table-FYCRjmSlKqg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 489.0,
+    "Brand": {
+      "Id": "1308",
+      "Name": "Nimble Made"
+    },
+    "ListPrice": 28.99,
+    "FinalPrice": 21.99
+  }
+]

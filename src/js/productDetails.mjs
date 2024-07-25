@@ -2,11 +2,14 @@ import { getLocalStorage, setLocalStorage, showAlertMessage, removePreviousAlert
 import { findProductById } from "./externalServices.mjs";
 
 // Make the variable productDetails global so that multiple functions can use it in this file.
-let productInfo = {};    
+let productInfo = {};
+
+document.querySelector("#quantity").value = 1;
 
 export default async function productDetails(productId) {
   // use findProductById to get the details for the current product. findProductById will return a promise! use await or .then() to process it
-  productInfo = await findProductById(productId);
+  const category = getLocalStorage("categoryInLocalStorage");
+  productInfo = await findProductById(productId, category);
   // console.log(productInfo);
 
   // once we have the product details we can render out the HTML
@@ -24,10 +27,39 @@ function addToCart() {
     cartItems = [];
   }
 
+  let quantity = document.querySelector("#quantity").value;
+
+  // Reference how to change a string to a number:
+  // https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/
+  quantity = Number(quantity);
+
+  // Reference on how to add key value pair to JSON object:
+  // https://stackoverflow.com/questions/28527712/how-to-add-key-value-pair-in-the-json-object-already-declared
+  productInfo["Quantity"] = quantity;
   console.log(productInfo);
 
   cartItems.push(productInfo);
   setLocalStorage("cart", cartItems);
+
+  let numberOfCartItemsElement = document.querySelector(".number-of-cart-items");
+  
+  // Reference for array map function:
+  // https://www.w3schools.com/jsref/jsref_map.asp
+  // Reference for array reduce function:
+  // https://www.w3schools.com/jsref/jsref_reduce.asp
+  let numberOfCartItems = cartItems.reduce( (total, cartItem) => total + cartItem.Quantity, 0);
+  
+  setLocalStorage("numberOfCartItems", numberOfCartItems);
+
+  numberOfCartItemsElement.textContent = numberOfCartItems;
+
+  // Reference for add DOM class:
+  // https://www.w3schools.com/howto/howto_js_add_class.asp
+  numberOfCartItemsElement.classList.add("show");
+
+   // Reference for remove DOM class:
+  // https://www.w3schools.com/howto/howto_js_remove_class.asp
+  numberOfCartItemsElement.classList.remove("hide"); 
 
   removePreviousAlerts();
   // Show message to the user that the product has been added to the cart.

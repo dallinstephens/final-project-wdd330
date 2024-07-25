@@ -89,7 +89,7 @@ function loadTemplate(path) {
   }
 }
 
-export function loadHeaderFooter() {
+export async function loadHeaderFooter() {
   // Load the header and footer templates in from our partials.
   const headerTemplateFunction = loadTemplate("/partials/header.html");
   const footerTemplateFunction = loadTemplate("/partials/footer.html");
@@ -99,8 +99,24 @@ export function loadHeaderFooter() {
   const footerElement = document.querySelector("#main-footer");
 
   // Render the header and footer.
-  renderWithTemplate(headerTemplateFunction, headerElement);
-  renderWithTemplate(footerTemplateFunction, footerElement);
+  await renderWithTemplate(headerTemplateFunction, headerElement);
+  await renderWithTemplate(footerTemplateFunction, footerElement);
+
+  let numberOfCartItemsElement = document.querySelector(".number-of-cart-items");  
+
+  let numberOfCartItems = getLocalStorage("numberOfCartItems");
+
+  if (numberOfCartItems) {
+    numberOfCartItemsElement.textContent = numberOfCartItems;
+
+    // Reference for add DOM class:
+    // https://www.w3schools.com/howto/howto_js_add_class.asp
+    numberOfCartItemsElement.classList.add("show");
+
+    // Reference for remove DOM class:
+    // https://www.w3schools.com/howto/howto_js_remove_class.asp
+    numberOfCartItemsElement.classList.remove("hide");
+  }
 }
 
 // Reference for help on showAlertMessage function: https://github.com/matkat99/sleepoutside/blob/v3-team7/src/js/utils.mjs

@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
 
-    <title>Sleep Outside | Cedar Ridge Rimrock 2-person tent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/style.css" />
+  <title>Mens Attire | Cedar Ridge Rimrock 2-person tent</title>
 
-    <script src="../js/product.js" type="module"></script>
-  </head>
+  <link rel="stylesheet" href="../css/style.css" />
 
-  <body>
-    <header id="main-header" class="divider"></header>
+  <script src="../js/product.js" type="module"></script>
+</head>
 
-    <main class="divider">
-      <section class="product-detail">
-        <h3 id="productName"></h3>
+<body>
+  <header id="main-header" class="divider"></header>
 
-        <h2 id="productNameWithoutBrand" class="divider"></h2>
+  <main class="divider">
+    <section class="product-detail">
+      <h3 id="productName"></h3>
 
-        <img id="productImage" class="divider" src="" alt="" />
+      <h2 id="productNameWithoutBrand" class="divider"></h2>
 
-        <p id="productFinalPrice" class="product-card__price"></p>
+      <img id="productImage" class="divider" src="" alt="" />
 
-        <p id="productColorName" class="product__color"></p>
+      <p id="productFinalPrice" class="product-card__price"></p>
 
-        <p id="productDescriptionHtmlSimple" class="product__description"></p>
+      <p id="productColorName" class="product__color"></p>
 
-        <div class="product-detail__add">
-          <!-- References for dataset (data-* attribute): -->
-          <!-- [Paste URL] -->
-          <!-- https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset -->
-          <!-- https://www.w3schools.com/tags/att_data-.asp -->
-          <button id="addToCart" data-id="">Add to Cart</button>
-        </div>
-      </section>
-    </main>
+      <p id="productDescriptionHtmlSimple" class="product__description"></p>
 
-    <footer id="main-footer"></footer>
-  </body>
+      <div class="product-detail__add">
+        <!-- Reference for input type number: -->
+        <!-- https://www.w3schools.com/tags/att_input_type_number.asp -->
+        <label id="quantity-container" for="quantity">Quantity<input type="number" id="quantity"
+            name="quantity"></label>
+        <!-- References for dataset (data-* attribute): -->
+        <!-- https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset -->
+        <!-- https://www.w3schools.com/tags/att_data-.asp -->
+        <button id="addToCart" data-id="">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer"></footer>
+</body>
+
 </html>

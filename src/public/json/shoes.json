@@ -1,0 +1,135 @@
+[
+  {
+    "Id": "CjNFouugoZs",
+    "NameWithoutBrand": "Orange High Top Sneakers",
+    "Name": "Converse All Star Orange High Top Sneakers",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1606753930828-fdcc943a273e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1606753930828-fdcc943a273e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1606753930828-fdcc943a273e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1606753930828-fdcc943a273e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Orange"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@l_eo_g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Leo Griffith</a> on <a href='https://unsplash.com/photos/brown-converse-all-star-high-top-sneakers-CjNFouugoZs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 300.0,
+    "Brand": {
+      "Id": "1308",
+      "LogoSrc": "../images/logos/marmot-160x100.jpg",
+      "Name": "Converse All Star"
+    },
+    "ListPrice": 59.99,
+    "FinalPrice": 45.99
+  },
+  {
+    "Id": "BSL837tTPAw",
+    "NameWithoutBrand": "Brown Leather Boot Shoes",
+    "Name": "Truman Brown Leather Boot Shoes",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1575987116913-e96e7d490b8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1575987116913-e96e7d490b8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1575987116913-e96e7d490b8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1575987116913-e96e7d490b8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Brown"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@claybanks?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Clay Banks</a> on <a href='https://unsplash.com/photos/pair-of-brown-leather-boots-BSL837tTPAw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 299.0,
+    "Brand": {
+      "Id": "1440",
+      "Name": "Truman"
+    },
+    "ListPrice": 69.99,
+    "FinalPrice": 59.99
+  },
+  {
+    "Id": "erHlzWCN6zQ",
+    "NameWithoutBrand": "Brown Leather Loafers",
+    "Name": "Truman Brown Leather Loafers",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Brown"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@jimmy2018?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Jia Ye</a> on <a href='https://unsplash.com/photos/pair-of-mens-brown-leather-loafers-erHlzWCN6zQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 270.0,
+    "Brand": {
+      "Id": "1440",
+      "Name": "Truman"
+    },
+    "ListPrice": 69.99,
+    "FinalPrice": 59.99
+  },
+  {
+    "Id": "1z2hBTKHdWI",
+    "NameWithoutBrand": "Brown Leather Shoes With Red Contour Stripes",
+    "Name": "Truman Brown Leather Shoes With Red Contour Stripes",
+    "Images": {
+      "PrimarySmall": "https://images.unsplash.com/photo-1616663308968-58162d332720?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+      "PrimaryMedium": "https://images.unsplash.com/photo-1616663308968-58162d332720?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+      "PrimaryLarge": "https://images.unsplash.com/photo-1616663308968-58162d332720?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
+      "PrimaryExtraLarge": "https://images.unsplash.com/photo-1616663308968-58162d332720?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+    },
+    "SizesAvailable": {
+      "Sm": "Small",
+      "Md": "Medium",
+      "L": "Large",
+      "XL": "X-Large",
+      "XXL": "XX-Large",
+      "3XL": "3X-Large"
+    },
+    "Colors": [
+      {
+        "ColorCode": "01",
+        "ColorName": "Brown"
+      }
+    ],
+    "DescriptionHtmlSimple": "Photo by <a href='https://unsplash.com/@noahsmith?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Noah Smith</a> on <a href='https://unsplash.com/photos/brown-leather-shoes-on-blue-textile-1z2hBTKHdWI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    "SuggestedRetailPrice": 489.0,
+    "Brand": {
+      "Id": "1308",
+      "Name": "Truman"
+    },
+    "ListPrice": 89.99,
+    "FinalPrice": 79.99
+  }
+]

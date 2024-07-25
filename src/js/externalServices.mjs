@@ -15,12 +15,23 @@ async function convertToJson(response) {
   }
 }
 
-export async function getProductsByCategory(category) {
-  const response = await fetch(baseURL + `products/search/${category}`);
-  const data = await convertToJson(response);
-  return data.Result;
+// THIS IS USED IF HAVE A SERVER TO GET THE PRODUCT DATA:
+// export async function getProductsByCategory(category) {
+//   const response = await fetch(baseURL + `products/search/${category}`);
+//   const data = await convertToJson(response);
+//   return data.Result;
+// }
+
+// THIS IS USED TO GET PRODUCTS FROM A FILE ON MY SYSTEM:
+export function getProductsByCategory(category) {
+  return fetch(`../json/${category}.json`)
+    .then(convertToJson)
+    // same thing as "function(data) { return data; }"
+    .then((data) => data);
 }
 
+// THIS WAS USED TO GET PRODUCTS FROM A FILE ON MY SYSTEM
+// DURING THE EARLY TEAM ACTIVITIES:
 // export function getData(category = "tents") {
 //   return fetch(`../json/${category}.json`)
 //     .then(convertToJson)
@@ -28,17 +39,29 @@ export async function getProductsByCategory(category) {
 //     .then((data) => data);
 // }
 
-export async function findProductById(id) {
-  const response = await fetch(baseURL + `product/${id}`);
-  const product = await convertToJson(response);
-  return product.Result;
-}
+// THIS IS USED IF HAVE A SERVER TO GET THE PRODUCT DATA:
+// export async function findProductById(id) {
+//   const response = await fetch(baseURL + `product/${id}`);
+//   const product = await convertToJson(response);
+//   return product.Result;
+// }
 
+// THIS WAS USED TO GET PRODUCTS FROM A FILE ON MY SYSTEM
+// DURING THE EARLY TEAM ACTIVITIES:
 // export async function findProductById(id) {
 //   const products = await getData();
 //   // same thing as "function(item) { return item.Id === id; }"
 //   return products.find((item) => item.Id === id);
 // }
+
+// THIS IS USED TO GET PRODUCTS FROM A FILE ON MY SYSTEM:
+export async function findProductById(id, category) {
+  // THIS WAS THE ORIGINAL IN THE EARLY TEAM ACTIVITIES:
+  // const products = await getData();
+  const products = await getProductsByCategory(category);
+  // same thing as "function(item) { return item.Id === id; }"
+  return products.find((item) => item.Id === id);
+}
 
 export async function checkoutInExternalServices(payload) {
   const options = {
