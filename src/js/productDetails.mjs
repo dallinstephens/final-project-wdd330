@@ -38,7 +38,20 @@ function addToCart() {
   productInfo["Quantity"] = quantity;
   console.log(productInfo);
 
-  cartItems.push(productInfo);
+  // This is to keep items from duplicated in the cart.
+  // Reference for array findIndex(): https://www.w3schools.com/jsref/jsref_findindex.asp
+  
+  const index = cartItems.findIndex((cartItem) => cartItem.Id == productInfo.Id);
+
+  // If index == -1, then that means that no match (no duplicate item) was found with findIndex().
+  if (index == -1) {
+    cartItems.push(productInfo);
+  }
+  // Run else statement if duplicate was found.
+  else {
+    cartItems[index]["Quantity"] = cartItems[index].Quantity + productInfo.Quantity;
+  }
+
   setLocalStorage("cart", cartItems);
 
   let numberOfCartItemsElement = document.querySelector(".number-of-cart-items");

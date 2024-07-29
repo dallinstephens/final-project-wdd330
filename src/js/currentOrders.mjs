@@ -22,19 +22,25 @@ function orderTemplate(order) {
   // Reference for cannot read typeerror length:
   // https://rollbar.com/blog/javascript-typeerror-cannot-read-property-length-of-undefined-in-javascript/
   try {
+  // References for array reduce(): 
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+  // https://www.w3schools.com/jsref/jsref_reduce.asp
+  const numberOfOrderItems = order.items.reduce( (sumOfTheQuantities, orderItem) => sumOfTheQuantities + orderItem.quantity, 0);
+
     return `<tr>
       <td>${order.id}</td>
       <td>${new Date(order.orderDate).toLocaleDateString("en-US")}</td>
-      <td>${order.items.length}</td>
+      <td>${numberOfOrderItems}</td>
       <td>$${order.orderTotal}</td>
     </tr>`;
   }
   catch {
-    return `<tr>
-      <td>${order.id}</td>
-      <td>${new Date(order.orderDate).toLocaleDateString("en-US")}</td>
-      <td>0</td>
-      <td>$${order.orderTotal}</td>
-    </tr>`;    
+    // THIS IS COMMENTED OUT SO THAT ONLY ORDERS THAT HAVE "quantity" WILL BE LISTED.
+    // return `<tr>
+    //   <td>${order.id}</td>
+    //   <td>${new Date(order.orderDate).toLocaleDateString("en-US")}</td>
+    //   <td>0</td>
+    //   <td>$${order.orderTotal}</td>
+    // </tr>`;    
   }
 }

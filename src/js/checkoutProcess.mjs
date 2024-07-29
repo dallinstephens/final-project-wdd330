@@ -5,6 +5,7 @@ const checkoutProcess = {
     key: "",
     outputSelector: "",
     list: [],
+    numberOfItems: 0,
     finalPriceTotal: 0,
     shipping: 0,
     tax: 0,
@@ -25,10 +26,15 @@ const checkoutProcess = {
             this.outputSelector + " #number-of-items"
         );
 
-        numberOfItemsElement.innerText = this.list.length;
+        // References for array reduce(): 
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+        // https://www.w3schools.com/jsref/jsref_reduce.asp
+        // I could have also got numberOfItems for localStorage.
+        this.numberOfItems = this.list.reduce( (sumOfTheQuantities, item) => sumOfTheQuantities + item.Quantity, 0);
+         numberOfItemsElement.innerText = this.numberOfItems;
         
         // calculate the total of all the items in the cart
-        const finalPriceAmounts = this.list.map((item) => item.FinalPrice);
+        const finalPriceAmounts = this.list.map((item) => item.Quantity * item.FinalPrice);
         this.finalPriceTotal = (finalPriceAmounts.reduce((sum, itemFinalPrice) => sum + itemFinalPrice)).toFixed(2);
         itemSubtotalElement.innerText = "$" + this.finalPriceTotal;
 
@@ -41,7 +47,7 @@ const checkoutProcess = {
         // Shipping: Use $10 for the first item plus $2 for each additional item for shipping.
         
         this.tax = (this.finalPriceTotal * 0.06).toFixed(2);
-        this.shipping = (10 + (2 * (this.list.length - 1))).toFixed(2);
+        this.shipping = (10 + (2 * (this.numberOfItems - 1))).toFixed(2);
 
         // Reference for parseFloat(): https://www.w3schools.com/jsref/jsref_parsefloat.asp
         // parseFloat() is used to change a change a string into a number. 
@@ -80,10 +86,11 @@ const checkoutProcess = {
             console.log(response); // Example output: {orderId: 1923, message: 'Order Placed'}
             // Empty the cart in local storage so that after the order is placed, the cart is empty.
             setLocalStorage("cart", []);
+            setLocalStorage("numberOfCartItems", []);
+
             // Reference for location.assign: https://www.w3schools.com/jsref/met_loc_assign.asp
             // location.assign will load a new window
-            location.assign("/checkout/success.html"); 
-            
+            location.assign("/checkout/success.html");             
         }
         catch (error) {
             // Remove previous alerts.
@@ -122,7 +129,7 @@ function packageItems(items) {
             id: item.Id,
             price: item.FinalPrice,
             name: item.Name,
-            quantity: 1,
+            quantity: item.Quantity,
         };
     });
     return simplifiedItems;

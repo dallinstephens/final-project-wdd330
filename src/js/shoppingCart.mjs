@@ -6,7 +6,7 @@ export default function shoppingCart() {
   // console.log(cartItems);
   // Reference for not null: https://www.geeksforgeeks.org/how-to-check-if-a-variable-is-not-null-in-javascript/
   // "if (cartItems)" means if cartItems in not null, do this.
-  if (cartItems) {
+  if (cartItems.length > 0) {
     const cartPageParentElement = document.querySelector(".product-list");
     // console.log(cardItemTemplate);
     // console.log(cartPageParentElement);
@@ -68,7 +68,6 @@ function calculateCartTotal(cartItems) {
   return total;
 }
 
-
 function deleteItemUponClick() {
   let productListElement = document.querySelector(".product-list");
 
@@ -116,7 +115,7 @@ function deleteItemUponClick() {
       let clickedLiElement = document.querySelector(`li:nth-of-type(${index + 1})`);
 
       // Reference for removeChild() DOM element: https://www.w3schools.com/jsref/met_node_removechild.asp
-      if (cartItems) {
+      if (index >= 0) {
         productListElement.removeChild(clickedLiElement);
       }
 

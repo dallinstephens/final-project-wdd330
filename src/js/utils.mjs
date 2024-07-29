@@ -106,7 +106,7 @@ export async function loadHeaderFooter() {
 
   let numberOfCartItems = getLocalStorage("numberOfCartItems");
 
-  if (numberOfCartItems) {
+  if (numberOfCartItems > 0) {
     numberOfCartItemsElement.textContent = numberOfCartItems;
 
     // Reference for add DOM class:
@@ -116,6 +116,15 @@ export async function loadHeaderFooter() {
     // Reference for remove DOM class:
     // https://www.w3schools.com/howto/howto_js_remove_class.asp
     numberOfCartItemsElement.classList.remove("hide");
+  }
+  else {    
+    // Reference for add DOM class:
+    // https://www.w3schools.com/howto/howto_js_add_class.asp
+    numberOfCartItemsElement.classList.add("hide");
+  
+    // Reference for remove DOM class:
+    // https://www.w3schools.com/howto/howto_js_remove_class.asp
+    numberOfCartItemsElement.classList.remove("show");
   }
 }
 
